@@ -30,11 +30,6 @@ public class CustomerController {
 //public String register(@RequestParam("name") String name,@RequestParam("name") String name,...)  Use this when you have only two or three parameteres by max
 //form data can be stored in the object directly, also the best method to do that
 	
-	@RequestMapping(path="home.lti")
-	public String setCall()
-	{
-		return "index.jsp";
-	}
 	
 	@RequestMapping(path="Register.lti",method=RequestMethod.POST)
 	public String register(Customer cust) throws CustomerException
