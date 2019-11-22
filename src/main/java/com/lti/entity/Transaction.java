@@ -26,23 +26,20 @@ public class Transaction
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "seq")
 	@SequenceGenerator(sequenceName = "transaction1_seq", name = "seq", allocationSize = 1)
 	private int tid;
-	
-	private int toAccountId;
-	
-	private String toAccountName;
-	
-	
+			
 	private double amount;
 	
 	private String type;
 
-    private int tOtp;
-	
 	private LocalDateTime dateTime;
 	
 	@ManyToOne
-	@JoinColumn(name="accountId", nullable=false)
+	@JoinColumn(name="fromaccountId", nullable=false)
 	private Account account;
+
+	@ManyToOne
+	@JoinColumn(name="toaccountId", nullable=false)
+	private Account toAccount;
 
 	public int getTid() {
 		return tid;
@@ -82,14 +79,6 @@ public class Transaction
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	public int gettOtp() {
-		return tOtp;
-	}
-
-	public void settOtp(int tOtp) {
-		this.tOtp = tOtp;
 	}
 
 	public LocalDateTime getDateTime() {
