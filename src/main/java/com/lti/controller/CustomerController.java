@@ -16,7 +16,7 @@ import com.lti.service.BeneficiaryService;
 import com.lti.service.CustomerService;
 
 /**
- * @author Priyanka Madas
+ * @author Priyanka Madas and Jyoti Dixit
  *
  */
 @Controller
@@ -55,7 +55,7 @@ public class CustomerController {
 	private BeneficiaryService beneficiaryinterface;
 	
 	@RequestMapping(path="/AddNewBeneficiary.lti",method=RequestMethod.POST)
-	public String addBeneficiary(Beneficiary b)
+	public String addB(Beneficiary b)
 	{
 		beneficiaryinterface.addBeneficiary(b);
 		System.out.println(b);

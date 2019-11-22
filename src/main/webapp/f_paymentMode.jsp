@@ -28,7 +28,7 @@
             <span>
             <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" placeholder="Search our ste:" type="text" />
             </span>
-            <input name="button_search" src="images/search_btn.gif" class="button_search" type="image" />
+            <input name="button_search" src="f_images/search_btn.gif" class="button_search" type="image" />
           </form>
         </div>
       </div>

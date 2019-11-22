@@ -37,7 +37,7 @@ Author : Jyoti Dixit
             <span>
             <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" placeholder="Search our site:" type="text" />
             </span>
-            <input name="button_search" src="images/search_btn.gif" class="button_search" type="image" />
+            <input name="button_search" src="f_images/search_btn.gif" class="button_search" type="image" />
           </form>
         </div>
       </div>
@@ -63,10 +63,10 @@ Author : Jyoti Dixit
                             <td><h3>Beneficiary's Account Number:<h3></h3></td>
                             <td><input type="text" name="bAccId" placeholder="123456789" id="beneficiaryAccNumber"></td>
                         </tr>
-                        <!-- <tr>
+                         <tr>
                             <td><h3>Re-enter Beneficiary's Account Number:<h3></h3></td>
-                            <td><input type="text" name="b_reaccno" placeholder="123456789" id="beneficiaryReAccNumber"></td>
-                        </tr> -->
+                            <td><input type="text" name="accountId" placeholder="123456789" id="beneficiaryReAccNumber"></td>
+                        </tr> 
                         <tr><td>&nbsp;</td></tr>
                         <tr>
                             <th colspan="2"><input type="submit" value="Save As Beneficiary"></th>
