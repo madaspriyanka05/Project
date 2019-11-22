@@ -1,7 +1,5 @@
 package com.lti.repository;
 
-
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -19,7 +17,6 @@ import com.lti.entity.Customer;
 /**
  * @author Priyanka and Jyoti Dixit
  * @Date 14-11-19
- *
  */
 
 @Component("customerrepo")
@@ -28,7 +25,7 @@ public class CustomerRepository implements CustomerInterface
 	@PersistenceContext
 	private EntityManager entityManager;
 	
-	@Transactional	
+	@Transactional
 	public void addNewCustomer(Customer customer) throws CustomerException  
 	{
 		entityManager.persist(customer);

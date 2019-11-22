@@ -174,7 +174,6 @@ public class Customer
 		this.customeraccount = customeraccount;
 	}
 	
-	
 	public String getPassword() {
 		return password;
 	}

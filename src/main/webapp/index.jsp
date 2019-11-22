@@ -23,7 +23,7 @@
                     
                         <li class="W3-BAR"><a href="index.html">My Accounts</a></li>
                         <li class="w3-bar-item"><a href="">Account Statement</a></li>
-                        <li class="w3-bar-item"><a href="PaymentMode.html">Fund Transfer</a></li>
+                        <li class="w3-bar-item"><a href="f_Index.jsp">Funds Transfer</a></li>
                         <li class="w3-bar-item"><a href="">My Profile</a></li>
                         <li class="w3-bar-item"><a href="">Change UserId/Password</a></li>
                         <li class="w3-bar-item"><a href="Register.jsp">Register</a></li>

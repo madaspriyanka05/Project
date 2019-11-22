@@ -55,7 +55,7 @@
                 <tr>
                     <td>
                         <b>Address:</b>
-                        <td> <textarea rows="5" cols="30" name="address" size="20">Enter your Address here
+                        <td> <textarea rows="5" cols="30" name="address" size="20" placeholder="Enter your Address here">
                  </textarea>
 
                         </td>

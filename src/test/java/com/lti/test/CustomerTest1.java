@@ -18,9 +18,8 @@ import com.lti.repository.CustomerRepository;
 public class CustomerTest1 {
 
      @Test
-	public void   customertest() 
+	public void customertest() 
 	{
-	
 		 ApplicationContext ctx= new   ClassPathXmlApplicationContext("app-config.xml");
 		   CustomerInterface  cp=(CustomerInterface)  ctx.getBean("customerrepo");
 		   //Entity or models  instances are  not created using Spring

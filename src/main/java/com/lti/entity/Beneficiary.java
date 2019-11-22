@@ -17,9 +17,6 @@ public class Beneficiary
 	@SequenceGenerator(sequenceName = "beneficiary_seq", name = "seq", allocationSize = 1)
 	private int bAccId; 
 	
-	
-	
-
 	private String name;
 	
 	@ManyToOne
@@ -51,6 +48,4 @@ public class Beneficiary
 		this.account = account;
 	}
 	
-	
-	
-	}
+}

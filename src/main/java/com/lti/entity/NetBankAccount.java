@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name="NetBankingAccount")
 public class NetBankAccount 
@@ -30,7 +29,6 @@ public class NetBankAccount
 	private String transactionPassword;
 	private String securityQues;
 	private String securityAns;
-	
 	
 	@OneToOne
 	@JoinColumn(name="accountId")
