@@ -3,14 +3,12 @@
  */
 package com.lti.controller;
 
-import java.io.IOException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.lti.Exception.CustomerException;
 import com.lti.entity.Customer;
@@ -24,6 +22,7 @@ import com.lti.service.CustomerService;
 public class CustomerController {
 
 	
+	
 	@Autowired
 	private CustomerService customerService;
 	
@@ -33,15 +32,33 @@ public class CustomerController {
 //public String register(@RequestParam("name") String name,@RequestParam("name") String name,...)  Use this when you have only two or three parameteres by max
 //form data can be stored in the object directly, also the best method to do that
 	
-	@RequestMapping(path="register.lti",method=RequestMethod.POST)
+	@RequestMapping(path="home.lti")
+	public String setCall()
+	{
+		return "index.jsp";
+	}
+	
+	@RequestMapping(path="Register.lti",method=RequestMethod.POST)
 	public String register(Customer cust) throws CustomerException
 	{
+		
 		customerService.register(cust);
 		System.out.println(cust);
 		return "Login.jsp";
 		
 	}
 	
+	@RequestMapping(path="Login.lti",method=RequestMethod.POST)
+	public String Login(Customer cust) throws CustomerException
+	{
+		
+		//customerService.logincheck(cust);
+		System.out.println(cust);
+		return "index.jsp";
+		
 	}
+	
+}
+
 	
 

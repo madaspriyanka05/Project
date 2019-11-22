@@ -26,7 +26,9 @@
                         <li class="w3-bar-item"><a href="PaymentMode.html">Fund Transfer</a></li>
                         <li class="w3-bar-item"><a href="">My Profile</a></li>
                         <li class="w3-bar-item"><a href="">Change UserId/Password</a></li>
-                        <li class="w3-bar-item"><a href="">LOGOUT</a></li>
+                        <li class="w3-bar-item"><a href="Register.jsp">Register</a></li>
+                        <li class="w3-bar-item"><a href="Login.jsp">Login</a></li>
+                        <li class="w3-bar-item"><a href="LogOut.jsp">LogOut</a></li>
                     </ul>
                 </div>
             </div>

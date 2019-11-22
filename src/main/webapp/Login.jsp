@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
 
@@ -31,5 +31,5 @@
 </div>
 
 <div class="login-help">
-    <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+    <p>Forgot your password? <a href="changePassword.jsp">Click here to reset it</a>.</p>
 </div>
