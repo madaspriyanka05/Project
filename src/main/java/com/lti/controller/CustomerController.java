@@ -34,7 +34,6 @@ public class CustomerController {
 	@RequestMapping(path="Register.lti",method=RequestMethod.POST)
 	public String register(Customer cust) throws CustomerException
 	{
-		
 		customerService.register(cust);
 		System.out.println(cust);
 		return "Login.jsp";
