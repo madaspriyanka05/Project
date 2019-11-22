@@ -1,7 +1,5 @@
-/**
- * 
- */
-package com.lti.controller;
+
+ package com.lti.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -48,16 +46,16 @@ public class CustomerController {
 		
 	}
 	
-	@RequestMapping(path="Login.lti",method=RequestMethod.POST)
-	public String Login(Customer cust) throws CustomerException
-	{
-		
-		//customerService.logincheck(cust);
-		System.out.println(cust);
-		return "index.jsp";
-		
-	}
-	
+//	@RequestMapping(path="Login.lti",method=RequestMethod.POST)
+//	public String Login(Customer cust) throws CustomerException
+//	{
+//		
+//		//customerService.logincheck(cust);
+//		System.out.println(cust);
+//		return "index.jsp";
+//		
+//	}
+//	
 }
 
 	
