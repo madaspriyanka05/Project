@@ -49,22 +49,6 @@ public class Transaction
 		this.tid = tid;
 	}
 
-	public int getToAccountId() {
-		return toAccountId;
-	}
-
-	public void setToAccountId(int toAccountId) {
-		this.toAccountId = toAccountId;
-	}
-
-	public String getToAccountName() {
-		return toAccountName;
-	}
-
-	public void setToAccountName(String toAccountName) {
-		this.toAccountName = toAccountName;
-	}
-
 	public double getAmount() {
 		return amount;
 	}
